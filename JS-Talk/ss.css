@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Hide horizontal scrollbar */
+}
+
+.image-container {
+    display: flex;
+    animation: moveImages 60s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+img {
+    width: 100vw; /* Full viewport width for each image */
+    height: 100vh; /* Full viewport height for each image */
+    object-fit: cover;
+}
+
+@keyframes moveImages {
+    0%, 100% {
+        transform: translateX(0); /* Starting and ending position, no movement */
+    }
+    20% {
+        transform: translateX(-100vw); /* Move to the second image after a pause */
+    }
+    40% {
+        transform: translateX(-200vw); /* Move to the third image after a pause */
+    }
+    60% {
+        transform: translateX(-300vw); /* Move to the fourth image after a pause */
+    }
+    80% {
+        transform: translateX(-400vw); /* Move back to the first image after a pause */
+    }
+}
