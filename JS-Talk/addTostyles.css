@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.items-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.item {
+    text-align: center;
+    margin: 10px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cart-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
