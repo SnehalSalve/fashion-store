@@ -1,4 +1,3 @@
-// script.js
 function addToCart(button) {
     const item = button.parentElement;
     const itemName = item.dataset.name;
